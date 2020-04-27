@@ -56,11 +56,11 @@ public class CalculadoraTest {
 		assertThat(resultadoEsperado,equalTo(resultadoEjecucion));
 	}
 	
-	@Test
-	public void divicionTest() {
+	@Test (expected = ArithmeticException.class)
+	public void dividirEntreCero() {
 		//Llamar al codigo 
-		float resultadoEsperado = 5;
-		float resultadoEjecucion = miCalculadora.divide(10,2);
+		float resultadoEsperado = 0;
+		float resultadoEjecucion = miCalculadora.divide(10,0);
 		
 		//Verificar
 		assertThat(resultadoEsperado,equalTo(resultadoEjecucion));
