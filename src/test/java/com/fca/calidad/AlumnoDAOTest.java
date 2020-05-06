@@ -63,8 +63,9 @@ public class AlumnoDAOTest {
 		 //comparar
 		 Float resultadoEsperado = 5.0f;
 		 Float resultadoEjecucion = alumno.getAverage();
-		  //Verificar esperado igual a vacio
+		  //Verificar esperado
 		  assertThat(resultadoEsperado, equalTo(resultadoEjecucion));
+		  
 		  
 		  
 		 

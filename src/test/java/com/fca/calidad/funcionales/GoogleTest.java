@@ -17,7 +17,8 @@ public class GoogleTest {
 
   @Before
   public void setUp() throws Exception {
-	  System.setProperty("webdriver.Chrome.driver", "Users//leand//Documents//chromedriver//chromedriver.exe");
+	  
+	  System.setProperty("webdriver.chrome.driver", "/Users/leand/Documents/chromedriver/chromedriver.exe");
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -26,6 +27,7 @@ public class GoogleTest {
   @Test
   public void testGoogle2() throws Exception {
     driver.get("https://www.google.com.mx/");
+    driver.findElement(By.name("q")).click();
     driver.findElement(By.name("q")).clear();
     driver.findElement(By.name("q")).sendKeys("hola");
     driver.findElement(By.id("tsf")).submit();
