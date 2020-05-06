@@ -1,7 +1,7 @@
 package com.fca.calidad;
 
 import java.util.HashMap;
-
+//Data Access Object
 public interface AlumnoDAO {
 	public void addAlumno(Alumno alumno);
 	public void removeAlumno(Alumno alumno);
