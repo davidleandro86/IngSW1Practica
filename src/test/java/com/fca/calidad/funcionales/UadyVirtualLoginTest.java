@@ -37,7 +37,7 @@ public class UadyVirtualLoginTest {
     driver.findElement(By.id("username")).sendKeys("A15211385");
     driver.findElement(By.id("password")).click();
     driver.findElement(By.id("password")).clear();
-    driver.findElement(By.id("password")).sendKeys("Dniko1994");
+    driver.findElement(By.id("password")).sendKeys("");
     driver.findElement(By.id("loginbtn")).click();
     
     WebElement texto = driver.findElement(By.id("custom_menu"));
