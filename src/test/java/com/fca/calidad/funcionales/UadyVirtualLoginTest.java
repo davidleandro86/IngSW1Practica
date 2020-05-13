@@ -41,7 +41,7 @@ public class UadyVirtualLoginTest {
     driver.findElement(By.id("loginbtn")).click();
     
     WebElement texto = driver.findElement(By.id("custom_menu"));
-    String resultadoEsperado = "div";
+    String resultadoEsperado = "";
     String resultadoEjecucion = texto.getTagName();
     assertThat(resultadoEsperado, equalTo(resultadoEjecucion));
     
